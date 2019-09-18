@@ -83,18 +83,29 @@ p{
     list-style: none;
     padding: 0;
     margin-top: 3em;
+   
     display: flex;
     
     justify-content: center;
 
 }
 
-
+.social-links {
+    margin: 2.5em;
+    margin-bottom: 1em;
+   
+    margin-top: 0.8em; 
+    padding: 0%;
+    
+}
 .social-links li a{
     color: #D7DEE6;
     text-decoration: none;
     font-size: 3em;
-    margin: 0 0.4em;
+    margin-bottom: 0.6em;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+    
     
 
 
@@ -307,6 +318,34 @@ footer .social-links {
         margin-top: 1em;
     }
 
+   .fas.fa-arrow-circle-down{
+        font-size: 2.3em;
+        color: #0AC693;
+        margin-bottom: 2.33em;
+        
+    }
+    
+    #menu>li:last-child>a{
+        color: tomato;
+    }
+   
+
+    .hide-mobile .show-desktop{
+        display: flex;
+        align-content: center;
+        align-items: center;
+        padding: 0em 4em;
+    }
+    
+    
+    .green-area>.container.post{
+        width: 100%;
+    }
+    .green-area>.container.post>h2{
+        width: 100%;
+    }
+
+   
 
 
 
@@ -315,8 +354,12 @@ footer .social-links {
 
 @media only screen and (min-width: 1024px) {
 
-       /*TODO: FALTA CSS */
+       /*TODO: FALTA CSS ipad pro */
        
+       .contact{
+           margin-bottom: 2.1em;
+           width: 40%;
+       }
 
 
 
@@ -336,19 +379,10 @@ footer .social-links {
 @media only screen and (min-width: 414px) {
 
     /*TODO: FALTA CSS */
-    .fasfa-arrow-circle-down{
-        margin: 2.5em;
-        margin-bottom: 5em;
-        margin-top: 0.8em; 
-    }
+    /*Terminado*/
 
-    .social-links {
-        margin: 2.5em;
-        margin-bottom: 5em;
-        margin-top: 0.8em; 
-        padding: 0%;
-        
-    }
+
+    
 
     .container.post  {
      padding: 1em 4em;
@@ -362,9 +396,7 @@ footer .social-links {
     }
 
     i{
-
         font-size: 1.7em;
-
     }
 
     .contact{
