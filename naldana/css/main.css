@@ -359,9 +359,82 @@ footer .social-links {
        .contact{
            margin-bottom: 2.1em;
            width: 40%;
+           display: flex;
+           
+       }
+
+       .about{
+
+        display: flex;
+        margin-top: 1.8em;
+        justify-content: center; 
+
+       }
+       .container{
+           display: flex;
+           flex-wrap: wrap;
+           width: 100%;
+           max-width: 1024;
+           margin: 0em auto;
+          
+       }
+
+       .big-hero>.container{
+           display: flex;
+           flex-flow: column wrap;
+
+       }
+
+       .big-hero>.container> img{
+           display: block;
+           margin: auto;
+       }
+
+       .header{
+           justify-content: space-between;
+           width: 100%;
+           margin: 0em;
+       }
+       
+       ul#menu li:last-child a{
+           color: tomato;
+
+       }
+
+       ul#menu li{
+           font-size: 2em;
+
+       }
+
+       nav{
+           margin-right: 3em;
+       }
+
+       ul#menu :hover{
+           color: tomato;
+
+       }
+
+       .container>.header> img{
+
+        margin-top: 5em;
+        margin-left: 3em;
+
+       }
+
+       
+
+       .about div{
+           flex: 1;
+       }
+
+       .about h2{
+        width: 100%;
+
        }
 
 
+       
 
 }
 
@@ -373,6 +446,8 @@ footer .social-links {
         margin: 0 auto;
         max-width: 1440px;
     }
+
+    
 }
 
 
