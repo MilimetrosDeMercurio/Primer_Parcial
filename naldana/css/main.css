@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
-
-
 /* El CSS siguiente esta pensando primero para moviles y luego para 
    Escritiorio*/
+
+   /**/
 *, ::before, ::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: calc(0.5em + 1vh);
 }
-
 /* El estilo base para moviles */
 body {
     background-color: #112935;
@@ -18,31 +17,25 @@ body {
     text-align: center;
     font-weight: 400;
 }
-
 .header {
     display: flex;
     justify-content: space-between
 }
-
 .src-only {
     display: none;
 }
-
 .hide-mobile {
     display: none;
 }
-
 p{
     font-size: 0.75em;
     padding: 1rem;
     line-height: 25px;
 }
-
 .logo {
     width: 90px;
     margin: 1em;
 }
-
 .options {
     color: inherit;
     text-decoration: none;
@@ -50,34 +43,27 @@ p{
     top: 30%;
     right: 95%;
     font-size: 1.5rem;
-
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-
 }
 .options i:last-child {
     font-size: 1.6rem;
 }
-
 /* Big area */
 .big-hero img {
     width: 150px;
 }
-
 .big-hero h2 {
     font-size: 1.875em;
     font-weight: 700;
     letter-spacing: 0.002em;
     margin-top: 1em ;
 }
-
 .big-hero p {
     font-size: 0.7em;;
     color: #D7DEE6;
-
 }
-
 /* Social links*/
 .social-links{
     list-style: none;
@@ -87,9 +73,7 @@ p{
     display: flex;
     
     justify-content: center;
-
 }
-
 .social-links {
     margin: 2.5em;
     margin-bottom: 1em;
@@ -107,16 +91,10 @@ p{
     margin-right: 0.3em;
     
     
-
-
 }
-
-
 .green-area {
     background-color: #0AC693; 
 }
-
-
 .post {
     padding: 1em;
     margin-bottom: -2px;
@@ -127,31 +105,27 @@ p{
     font-size: 1.125em;
     margin: 1em;
 }
-
 .post ul {
     list-style: none;
 }
-
 .post ul li {
     min-height: 300px;
     max-width: 350px;
     margin: 2rem auto;
 }
-
 .post ul li article {
     overflow: hidden;
     border-radius: 10px;
     background-color: #ffffff;
     text-align: left;
     padding-bottom: 2em;
+    flex-wrap: wrap-reverse;
 }
-
 .post article img{
     height: 150px;
     width: 100%;
     object-fit: cover;
 }
-
 .post article h3 {
     color: #0D5061;
     margin-top: 2em;
@@ -161,31 +135,25 @@ p{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
 .post article p {
     color:#112935;
     font-size: 0.75em;
     padding: 1rem;
     line-height: 25px;
 }
-
 /* About */
-
 .about{
     margin-top: 2em;
 }
-
 .about h2 {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.125em;
     margin: 2em;
 }
-
 .bio-info img{
    width: 200px;
 }
-
 .bio-info p{
     font-size: 16px;
     padding: 2em;
@@ -193,23 +161,19 @@ p{
     line-height: 25px;
     letter-spacing: 2px;
 }
-
 .contact {
     display: flex;
     flex-direction: column;
     text-align: left;
     padding: 0px 1em;
 }
-
 .contact * + * {
     margin-top: 1.5em;
 }
-
 .contact-form {
     display: flex;
     flex-direction: column;
 }
-
 .contact-form input, .contact-form textarea{
     padding: 1rem 2rem;
     border: none;
@@ -217,9 +181,7 @@ p{
     font-size: 1em;
     width: 100%;
 }
-
 /* Decorando placeholder */
-
 ::-webkit-input-placeholder { 
     color: #D7DEE6; 
 } 
@@ -229,27 +191,22 @@ p{
 ::-moz-placeholder { /* Firefox 19+ */ color: #D7DEE6; } 
  
 :-ms-input-placeholder { color: #D7DEE6; }
-
 .contact-form input[type=submit] {
     background-color: #F74442;
     font-weight: 400;
     color: white;
     font-size: 1rem;
 }
-
 .black-decoration{
     background-image: url("../images/decoracion_oscura_small.svg");
 }
-
 footer{
     background-color: #0D5061;
     color:#D7DEE6;
 }
-
 footer .social-links {
     margin: 0;
 }
-
 .menu {
     background-color: #112935;
     position: absolute;
@@ -259,7 +216,6 @@ footer .social-links {
     width: 100vw;
     height: calc(100vh - 60px);
 }
-
 .menu {
     list-style: none;
     text-align: left;
@@ -270,15 +226,15 @@ footer .social-links {
     padding: 0.5em;
     margin-top: 5px;
 }
-
 .menu li a {
     color: white;
     text-decoration: none;
     
 }
-
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
+
+    /* Modificacion de los espacios en los que se situan mis elementos */
   
     .post ul {
         list-style: none;
@@ -287,6 +243,8 @@ footer .social-links {
         justify-content: center;
     }
     
+    /*Modificacion y ajustes, de mi lista, de las cajas que contienen los articulos e imagenes */
+
     .post ul li {
         min-height: 350px;
         max-height: 3500px;
@@ -294,21 +252,27 @@ footer .social-links {
         flex: 1 0 300px;
     }
 
-
+    /* Modificacion de tamanio y espacio, del logo que se titula como " NALDANA" */
     .logo {
-        width: 150px;
+        width: 100px;
         margin: 1.5em;
     }
+
+    /* Se ha utilizado el block, para que conforme cambie su tamaño no se deforme */
+    /* Utilizando margenes negativos para poder utilizar el espacio entre los elementos */
 
     .show-desktop {
         display: block;
         margin-bottom: -1em; 
     }
 
+    
     .hide-desktop {
         display: none;
-        
+
     }
+
+    /* Menu, donde se encuentra lo principal y sus propiedades adecuadas al tamaño de la pantalla correspondiente */
 
     .menu {
         background-color: #112935; 
@@ -320,6 +284,9 @@ footer .social-links {
         margin-top: 1em;
     }
 
+    /* La imagen que nos indica que podemos desplegarnos hacia abajo para mas informacion*/
+    /* Se le define el color, su tamaño, y su margen */
+
    .fas.fa-arrow-circle-down{
         font-size: 2.3em;
         color: #0AC693;
@@ -327,35 +294,39 @@ footer .social-links {
         
     }
     
+    /* Se hereda de la lista un campo especifico a modificar por individual, en este calo es "Contacto" */
+    /* Que lo que se ha hecho es definirle un color */
+
     #menu>li:last-child>a{
         color: tomato;
     }
    
+    /* Es la parte definida para las dimensiones al tenerlo en un mobil */
+    /* Es decir que sera responsive y todo se ajustara deacuerdo a la pantalla en la que se encuentre */
 
     .hide-mobile .show-desktop{
         display: flex;
         align-content: center;
         align-items: center;
-        padding: 0em 4em;
+        padding: 5em 4em;
     }
     
+    /* Se le define el ancho en el area verde donde se encuentran los articulos para que tome el espacio compelto 
+    de manera a que se adecue y todo quede centrado */
     
     .green-area>.container.post{
         width: 100%;
     }
+
+    /* Se define el ancho en el cual se tendra el titulo "Publicaciones" para que quede justo en el centro 
+    sin importar su dimension en la que se aplique */
+
     .green-area>.container.post>h2{
         width: 100%;
     }
-
-   
-
-
-
-    /*TODO: FALTA CSS */
+  
 } 
-
 @media only screen and (min-width: 1024px) {
-
        /*TODO: FALTA CSS ipad pro */
        
        .contact{
@@ -364,13 +335,10 @@ footer .social-links {
            display: flex;
            
        }
-
        .about{
-
         display: flex;
         margin-top: 1.8em;
         justify-content: center; 
-
        }
        .container{
            display: flex;
@@ -380,44 +348,39 @@ footer .social-links {
            margin: 0em auto;
           
        }
-
        .big-hero>.container{
            display: flex;
            flex-flow: column wrap;
-
        }
-
        .big-hero>.container> img{
            display: block;
            margin: auto;
        }
-
        .header{
            justify-content: space-between;
            width: 100%;
+           margin: 0em;
            margin: 0 3em 0 3em;
            margin-top: -1em;
        }
-       
+
        ul#menu li:last-child a{
            color: tomato;
-
        }
-
        ul#menu li{
            font-size: 2em;
 
        }
 
-       
+       nav{
+           margin-right: 3em;
+       }
+
 
        ul#menu :hover{
            color: tomato;
-
        }
-
        .container>.header> img{
-
         margin-top: 5em;
         margin-left: 3em;
 
@@ -427,12 +390,11 @@ footer .social-links {
            padding:1em; 
        }
 
-       
+
 
        .about div{
            flex: 1;
        }
-
        .about h2{
         width: 100%;
 
@@ -444,12 +406,10 @@ footer .social-links {
     }
 
 
-       
+
 
 }
-
 @media only screen and (min-width: 1440px) {
-
     /*TODO: FALTA CSS */
     .container {
         width: 80%;
@@ -461,7 +421,7 @@ footer .social-links {
         margin-bottom: 2.1em;
         width: 40%;
         display: flex;
-        
+
     }
 
     .about{
@@ -477,7 +437,7 @@ footer .social-links {
         width: 100%;
         max-width: 1024;
         margin: 0em auto;
-       
+
     }
 
     .big-hero>.container{
@@ -496,7 +456,7 @@ footer .social-links {
         width: 100%;
         margin: 0em;
     }
-    
+
     ul#menu li:last-child a{
         color: tomato;
 
@@ -523,7 +483,7 @@ footer .social-links {
 
     }
 
-    
+
 
     .about div{
         flex: 1;
@@ -534,41 +494,29 @@ footer .social-links {
 
     }
 
-   
+
 
 
 }
 
 
 @media only screen and (min-width: 414px) {
-
     /*TODO: FALTA CSS */
     /*Terminado*/
-
-
     
-
     .container.post  {
      padding: 1em 4em;
     }
-
-
     .container p{
-
        padding: 0.3em;
        font-size: 0.9em;
     }
-
     i{
         font-size: 1.7em;
     }
-
     .contact{
        padding: 3em 3em;
-
     }
-
-
     .bio-info{
         padding: 0em 3.9em;
         font-size: 1em;
@@ -578,20 +526,526 @@ footer .social-links {
         width: 150px;
         margin: 2em;
     }
-
     footer .social-links li a {
         margin-top: 0.8em;
     }
-
     
-
     .contact-form{
         font-weight: bold;
     }
-
     footer p {
         font-size: 0.8em;
         margin: 0em  0em -2em;
     
     }
-}
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+    /* El CSS siguiente esta pensando primero para moviles y luego para 
+       Escritiorio*/
+    *, ::before, ::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: calc(0.5em + 1vh);
+    }
+    /* El estilo base para moviles */
+    body {
+        background-color: #112935;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        font-weight: 400;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between
+    }
+    .src-only {
+        display: none;
+    }
+    .hide-mobile {
+        display: none;
+    }
+    p{
+        font-size: 0.75em;
+        padding: 1rem;
+        line-height: 25px;
+    }
+    .logo {
+        width: 90px;
+        margin: 1em;
+    }
+    .options {
+        color: inherit;
+        text-decoration: none;
+        position: relative;
+        top: 30%;
+        right: 95%;
+        font-size: 1.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .options i:last-child {
+        font-size: 1.6rem;
+    }
+    /* Big area */
+    .big-hero img {
+        width: 150px;
+    }
+    .big-hero h2 {
+        font-size: 1.875em;
+        font-weight: 700;
+        letter-spacing: 0.002em;
+        margin-top: 1em ;
+    }
+    .big-hero p {
+        font-size: 0.7em;;
+        color: #D7DEE6;
+    }
+    /* Social links*/
+    .social-links{
+        list-style: none;
+        padding: 0;
+        margin-top: 3em;
+       
+        display: flex;
+        
+        justify-content: center;
+    }
+    .social-links {
+        margin: 2.5em;
+        margin-bottom: 1em;
+       
+        margin-top: 0.8em; 
+        padding: 0%;
+        
+    }
+    .social-links li a{
+        color: #D7DEE6;
+        text-decoration: none;
+        font-size: 3em;
+        margin-bottom: 0.6em;
+        margin-left: 0.3em;
+        margin-right: 0.3em;
+        
+        
+    }
+    .green-area {
+        background-color: #0AC693; 
+    }
+    .post {
+        padding: 1em;
+        margin-bottom: -2px;
+    }
+    .post h2 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.125em;
+        margin: 1em;
+    }
+    .post ul {
+        list-style: none;
+    }
+    .post ul li {
+        min-height: 300px;
+        max-width: 350px;
+        margin: 2rem auto;
+    }
+    .post ul li article {
+        overflow: hidden;
+        border-radius: 10px;
+        background-color: #ffffff;
+        text-align: left;
+        padding-bottom: 2em;
+    }
+    .post article img{
+        height: 150px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .post article h3 {
+        color: #0D5061;
+        margin-top: 2em;
+        padding: 0em 1rem;
+        font-size: 0.9em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .post article p {
+        color:#112935;
+        font-size: 0.75em;
+        padding: 1rem;
+        line-height: 25px;
+    }
+    /* About */
+    .about{
+        margin-top: 2em;
+    }
+    .about h2 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.125em;
+        margin: 2em;
+    }
+    .bio-info img{
+       width: 200px;
+    }
+    .bio-info p{
+        font-size: 16px;
+        padding: 2em;
+        text-align: left;
+        line-height: 25px;
+        letter-spacing: 2px;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 0px 1em;
+    }
+    .contact * + * {
+        margin-top: 1.5em;
+    }
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-form input, .contact-form textarea{
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 0px 2em;
+        font-size: 1em;
+        width: 100%;
+    }
+    /* Decorando placeholder */
+    ::-webkit-input-placeholder { 
+        color: #D7DEE6; 
+    } 
+     
+    :-moz-placeholder { /* Firefox 18- */ color: #D7DEE6; } 
+     
+    ::-moz-placeholder { /* Firefox 19+ */ color: #D7DEE6; } 
+     
+    :-ms-input-placeholder { color: #D7DEE6; }
+    .contact-form input[type=submit] {
+        background-color: #F74442;
+        font-weight: 400;
+        color: white;
+        font-size: 1rem;
+    }
+    .black-decoration{
+        background-image: url("../images/decoracion_oscura_small.svg");
+    }
+    footer{
+        background-color: #0D5061;
+        color:#D7DEE6;
+    }
+    footer .social-links {
+        margin: 0;
+    }
+    .menu {
+        background-color: #112935;
+        position: absolute;
+        z-index: 20;
+        top: 60px;
+        right: 0;
+        width: 100vw;
+        height: calc(100vh - 60px);
+    }
+    .menu {
+        list-style: none;
+        text-align: left;
+        padding: 1em;
+    }
+    .menu li {
+        display: block;
+        padding: 0.5em;
+        margin-top: 5px;
+    }
+    .menu li a {
+        color: white;
+        text-decoration: none;
+        
+    }
+    /* Pesonalizando estilo para tablets*/
+    @media only screen and (min-width: 768px) {
+      
+        .post ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .post ul li {
+            min-height: 350px;
+            max-height: 3500px;
+            margin: 1rem 2rem;
+            flex: 1 0 300px;
+        }
+        .logo {
+            width: 150px;
+            margin: 1.5em;
+        }
+    
+        .show-desktop {
+            display: block;
+            margin-bottom: -1em; 
+        }
+    
+        .hide-desktop {
+            display: none;
+    
+        }
+    
+        .menu {
+            background-color: #112935; 
+            position: static;
+            z-index: 20;
+            width: auto;
+            height:auto;
+            display: flex;
+            margin-top: 1em;
+        }
+       .fas.fa-arrow-circle-down{
+            font-size: 2.3em;
+            color: #0AC693;
+            margin-bottom: 2.33em;
+            
+        }
+        
+        #menu>li:last-child>a{
+            color: tomato;
+        }
+       
+        .hide-mobile .show-desktop{
+            display: flex;
+            align-content: center;
+            align-items: center;
+            padding: 0em 4em;
+        }
+        
+        
+        .green-area>.container.post{
+            width: 100%;
+        }
+        .green-area>.container.post>h2{
+            width: 100%;
+        }
+       
+        /*TODO: FALTA CSS */
+    } 
+    @media only screen and (min-width: 1024px) {
+           /*TODO: FALTA CSS ipad pro */
+           
+           .contact{
+               margin-bottom: 2.1em;
+               width: 40%;
+               display: flex;
+               
+           }
+           .about{
+            display: flex;
+            margin-top: 1.8em;
+            justify-content: center; 
+           }
+           .container{
+               display: flex;
+               flex-wrap: wrap;
+               width: 100%;
+               max-width: 1024;
+               margin: 0em auto;
+              
+           }
+           .big-hero>.container{
+               display: flex;
+               flex-flow: column wrap;
+           }
+           .big-hero>.container> img{
+               display: block;
+               margin: auto;
+           }
+           .header{
+               justify-content: space-between;
+               width: 100%;
+               margin: 0em;
+               margin: 0 3em 0 3em;
+               margin-top: -1em;
+           }
+    
+           ul#menu li:last-child a{
+               color: tomato;
+           }
+           ul#menu li{
+               font-size: 2em;
+    
+           }
+    
+           nav{
+               margin-right: 3em;
+           }
+    
+    
+           ul#menu :hover{
+               color: tomato;
+           }
+           .container>.header> img{
+            margin-top: 5em;
+            margin-left: 3em;
+    
+           }
+    
+           nav ul{
+               padding:1em; 
+           }
+    
+    
+    
+           .about div{
+               flex: 1;
+           }
+           .about h2{
+            width: 100%;
+    
+           }
+    
+           .contact-form input[type=submit]{
+            width: 50%;
+    
+        }
+    
+    
+    
+    
+    }
+    @media only screen and (min-width: 1440px) {
+        /*TODO: FALTA CSS */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1440px;
+        }
+    
+        .contact{
+            margin-bottom: 2.1em;
+            width: 40%;
+            display: flex;
+    
+        }
+    
+        .about{
+    
+         display: flex;
+         margin-top: 1.8em;
+         justify-content: center; 
+    
+        }
+
+
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 1024;
+            margin: 0em auto;
+    
+        }
+    
+        .big-hero>.container{
+            display: flex;
+            flex-flow: column wrap;
+    
+        }
+    
+        .big-hero>.container> img{
+            display: block;
+            margin: auto;
+
+        }
+    
+        .header{
+            justify-content: space-between;
+            width: 100%;
+            margin: 0em;
+        }
+    
+        ul#menu li:last-child a{
+            color: tomato;
+    
+        }
+    
+        ul#menu li{
+            font-size: 2em;
+    
+        }
+    
+        nav{
+            margin-right: 3em;
+        }
+    
+        ul#menu :hover{
+            color: tomato;
+    
+        }
+    
+        .container>.header> img{
+    
+         margin-top: 5em;
+         margin-left: 3em;
+    
+        }
+    
+        .about div{
+            flex: 1;
+        }
+    
+        .about h2{
+         width: 100%;
+    
+        }
+    
+    
+    }
+    
+    
+    @media only screen and (min-width: 414px) {
+        /*TODO: FALTA CSS */
+        /*Terminado*/
+        
+        .container.post  {
+         padding: 1em 4em;
+         flex-wrap: wrap;
+        }
+        .container p{
+           padding: 0.3em;
+           font-size: 0.9em;
+        }
+        i{
+            font-size: 1.7em;
+        }
+        .contact{
+           padding: 3em 3em;
+        }
+        .bio-info{
+            padding: 0em 3.9em;
+            font-size: 1em;
+        
+        }
+        .bio-info img {
+            width: 150px;
+            margin: 2em;
+        }
+        footer .social-links li a {
+            margin-top: 0.8em;
+        }
+        
+        .contact-form{
+            font-weight: bold;
+        }
+        footer p {
+            font-size: 0.8em;
+            margin: 0em  0em -2em;
+        
+        }
+    }
