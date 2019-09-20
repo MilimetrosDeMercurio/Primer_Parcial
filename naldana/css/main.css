@@ -138,9 +138,9 @@ p{
 }
 .post ul li {
     min-height: 400px;
-    max-width: 500px;
     margin: 2rem auto;
 }
+
 .post ul li article {
     overflow: hidden;
     border-radius: 10px;
@@ -149,6 +149,7 @@ p{
     padding-bottom: 2em;
     font-size: calc(0.9em + 1vh);
 }
+
 .post article img{
     height: 150px;
     width: 100%;
@@ -268,7 +269,6 @@ footer .social-links {
         list-style: none;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
 
     }
     
@@ -279,12 +279,14 @@ footer .social-links {
         max-height: 3500px;
         margin: 1rem 2rem;
         flex: 1 0 300px;
+        width: 370px;
     }
 
     /* Modificacion de tamanio y espacio, del logo que se titula como " NALDANA" */
     .logo {
         width: 140px;
         margin: 1em;
+        margin-left: 6em;
     }
 
     /* Se ha utilizado el block, para que conforme cambie su tamaño no se deforme */
@@ -417,8 +419,8 @@ footer .social-links {
            justify-content: space-between;
            width: 100%;
            margin: 0em;
-           margin: 0 3em 0 3em;
-           margin-top: -1em;
+           margin-top: -0.5em;
+           margin-right: 0.5em;
        }
 
         /* Se hereda de la lista un campo especifico a modificar por individual, en este calo es "Contacto" */
@@ -480,7 +482,9 @@ footer .social-links {
     }
 
 
-
+    .post ul li {
+        max-width: 370px;
+    }
 
 }
 @media only screen and (min-width: 1440px) {
@@ -556,6 +560,7 @@ footer .social-links {
         justify-content: space-between;
         width: 100%;
         margin: 0em;
+        margin-right: 1em;
     }
 
 
@@ -608,6 +613,14 @@ footer .social-links {
 
     }
 
+    .post ul{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
 
 
 
@@ -628,8 +641,8 @@ footer .social-links {
     /* Se le coloca el margen en la parte donde esta las publicaciones */
     .container p{
        padding: 0.3em;
-       font-size: 0.9em;
-       font-size: calc(0.8em + 1vh);
+       
+       font-size: calc(0.4em + 1vh);
     }
 
     /* El tamaño  que se le asigna a la letra*/
@@ -675,3 +688,12 @@ footer .social-links {
         margin: 0em  0em -2em;
     
     }
+
+    .fa-github, .fa-twitter{
+        font-size: calc(1em + 1vh);
+    }
+
+    .social-links{
+        margin-bottom: 4em;
+    }
+}
