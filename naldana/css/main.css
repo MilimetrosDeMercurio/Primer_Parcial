@@ -587,35 +587,57 @@ footer .social-links {
 
     /*Terminado*/
     
+    /* Se le determina el margen debido a que este sera para un mobil, por eso sus dimensiones son muy diferentes a la 
+    de las demas */
+
     .container.post  {
      padding: 1em 4em;
     }
+
+    /* Se le coloca el margen en la parte donde esta las publicaciones */
     .container p{
        padding: 0.3em;
        font-size: 0.9em;
     }
+
+    /* El tamaño  que se le asigna a la letra*/
     i{
         font-size: 1.7em;
     }
+
+    /* El area de contacto, ya que tiene cajas de texto, labels, se le define un tamaño 
+     y que sera apto para cualquiera de las pantallas en que se presente */
+
     .contact{
        padding: 3em 3em;
     }
+
+    /* El cambio de dimensiones en este caso para que pueda ser responisve sera mas notorio 
+     por eso es que se aplica cantiades pequeñas */ 
     .bio-info{
         padding: 0em 3.9em;
         font-size: 1em;
     
     }
+
+    /* Se modifica el tamaño para la imagen y que no pueda haber ningun problema*/
     .bio-info img {
         width: 150px;
         margin: 2em;
     }
+
+    /* Se le asigna un margen diferente a esta parte, debido a que cambiara totalmente*/
     footer .social-links li a {
         margin-top: 0.8em;
     }
     
+    /* Tenemos el formulario pero en este caso solo le modificamos el tipo de letra de normal a negrita*/
     .contact-form{
         font-weight: bold;
     }
+
+    /* COlocando los margenes adecuados para que no vaya haber problemas a la hora de comprobar nuetra pagina 
+    responsive */
     footer p {
         font-size: 0.8em;
         margin: 0em  0em -2em;
