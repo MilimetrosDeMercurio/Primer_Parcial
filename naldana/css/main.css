@@ -454,12 +454,19 @@ footer .social-links {
 
 }
 @media only screen and (min-width: 1440px) {
+
+    /* En este de define que sera responsive el y todo lo que este contenido dentro de el,
+    se le asigna el tamaño completo de la pantalla para dejarlo apto y se define que tamaño de pantalla sera,
+    incluyendo sus margenes para tener todo en su lugar */
     
     .container {
         width: 80%;
         margin: 0 auto;
         max-width: 1440px;
     }
+
+    /* El area de contacto, ya que tiene cajas de texto, labels, se le define un tamaño 
+     y que sera apto para cualquiera de las pantallas en que se presente */
 
     .contact{
         margin-bottom: 2.1em;
@@ -468,6 +475,9 @@ footer .social-links {
 
     }
 
+    /* Es la seccion que se encuentra al final de la pagina, y se le define la manera en que estaran colocados
+    los elementos, definiendo que sera responsive en cualquiera de las pantallas, su margen y el centrado de los elementos*/
+
     .about{
 
      display: flex;
@@ -475,6 +485,11 @@ footer .social-links {
      justify-content: center; 
 
     }
+
+    /* En este de define que sera responsive el y todo lo que este contenido dentro de el,
+    se le asigna el tamaño completo de la pantalla para dejarlo apto y se define que tamaño de pantalla sera,
+    incluyendo sus margenes para tener todo en su lugar */
+
     .container{
         display: flex;
         flex-wrap: wrap;
@@ -484,16 +499,27 @@ footer .social-links {
 
     }
 
+     /* Nuestra parte secundaria, en la que se define que sera responsive y los elementos 
+    seran colocados en columnas */
+
     .big-hero>.container{
         display: flex;
         flex-flow: column wrap;
 
     }
 
+    /* Se define los detalles de la imagen para que no se nos vaya a desconfigurar al cambiar 
+    de tamaño, se le define block debido a que no queremos que esta se mueva en cualquier movimiento */
+
     .big-hero>.container> img{
         display: block;
         margin: auto;
     }
+
+
+       /* En este se encuentran nuestras opciones principales, y debido a que son mas de 1 el espacio tiene que ir bien 
+       proporcionado para que no haya errores */
+
 
     .header{
         justify-content: space-between;
@@ -501,24 +527,35 @@ footer .social-links {
         margin: 0em;
     }
 
+
+     /*Es el efecto sombra que se le pone de otro color al pasar el cursor sobre ello */
+
     ul#menu li:last-child a{
         color: tomato;
 
     }
+
+    
 
     ul#menu li{
         font-size: 2em;
 
     }
 
+
+    /* Se le coloca a la lista para tenerla ordenada */
+
     nav{
         margin-right: 3em;
     }
 
+    /* Es el efecto sombreado y que hace que a lo que se le ha aplicado cambie de color */
     ul#menu :hover{
         color: tomato;
 
     }
+
+    /* Es el espacio de margenes que se le coloca para que quede bien posicionado */
 
     .container>.header> img{
 
@@ -527,11 +564,13 @@ footer .social-links {
 
     }
 
-
+    /* Se le especifica el epacio que tomara deacuerdo a la pantalla */
 
     .about div{
         flex: 1;
     }
+
+    /* Se le especifica el epacio que tomara deacuerdo a la pantalla */
 
     .about h2{
      width: 100%;
@@ -545,7 +584,7 @@ footer .social-links {
 
 
 @media only screen and (min-width: 414px) {
-    /*TODO: FALTA CSS */
+
     /*Terminado*/
     
     .container.post  {
