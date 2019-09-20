@@ -137,8 +137,8 @@ p{
     list-style: none;
 }
 .post ul li {
-    min-height: 300px;
-    max-width: 350px;
+    min-height: 400px;
+    max-width: 500px;
     margin: 2rem auto;
 }
 .post ul li article {
@@ -269,7 +269,7 @@ footer .social-links {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        
+
     }
     
     /*Modificacion y ajustes, de mi lista, de las cajas que contienen los articulos e imagenes */
