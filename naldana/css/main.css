@@ -62,6 +62,8 @@ p{
     flex-wrap: wrap;
     align-items: flex-start;
 }
+
+/* Tomando uno solo de los elementos para poder modificarlo personalizado (herencia) */
 .options i:last-child {
     font-size: 1.6rem;
 }
@@ -136,10 +138,16 @@ p{
 .post ul {
     list-style: none;
 }
+
+/* Definiendo el tamaño para mi lista en la que estan las publicaciones*/
+
 .post ul li {
     min-height: 400px;
     margin: 2rem auto;
 }
+
+/* Decoracion en el area donde se encuentra los articulos y definiendo sus 
+propiedades */
 
 .post ul li article {
     overflow: hidden;
@@ -150,11 +158,16 @@ p{
     font-size: calc(0.9em + 1vh);
 }
 
+/* Detalles de la imagen que se encuentra dentro de cada uno de
+los articulos */
 .post article img{
     height: 150px;
     width: 100%;
     object-fit: cover;
 }
+
+/* Definiendo nuestra ultima parte */
+
 .post article h3 {
     color: #0D5061;
     margin-top: 2em;
@@ -164,6 +177,9 @@ p{
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+/* Definiendo y detallando cada uno de las publicaciones */
+
 .post article p {
     color:#112935;
     font-size: 0.75em;
@@ -174,12 +190,16 @@ p{
 .about{
     margin-top: 2em;
 }
+
+/* Estableciendo diseño */
 .about h2 {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.125em;
     margin: 2em;
 }
+
+/* Definiendo el tamaño para cada una de las imagenes en nuestras publicaciones */
 .bio-info img{
    width: 200px;
 }
@@ -190,6 +210,8 @@ p{
     line-height: 25px;
     letter-spacing: 2px;
 }
+
+/* Colocando el area de informacion a la par de la descripcion */
 .contact {
     display: flex;
     flex-direction: column;
@@ -199,6 +221,8 @@ p{
 .contact * + * {
     margin-top: 1.5em;
 }
+
+/* Dando el estilo a nuestro formulario */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -233,9 +257,17 @@ footer{
     background-color: #0D5061;
     color:#D7DEE6;
 }
+
+
+/* Colocando el margen para los logos que se encuentran al final de la pagina */
+
 footer .social-links {
     margin: 0;
 }
+
+/* Personalizacion del menu y estableciendo sus caracteristicas conforme al disenio y posicion de 
+cada elemento */
+
 .menu {
     background-color: #112935;
     position: absolute;
@@ -245,16 +277,23 @@ footer .social-links {
     width: 100vw;
     height: calc(100vh - 60px);
 }
+
+/* Definiendo las caracteristicas de el menu */
 .menu {
     list-style: none;
     text-align: left;
     padding: 1em;
 }
+
+/* Definiendo el area de nuestro menu principal */
 .menu li {
     display: block;
     padding: 0.5em;
     margin-top: 5px;
 }
+
+/* Detallando nuestra lista que se encuentra en el menu */
+
 .menu li a {
     color: white;
     text-decoration: none;
@@ -362,7 +401,7 @@ footer .social-links {
     
 } 
 @media only screen and (min-width: 1024px) {
-       /*TODO: FALTA CSS ipad pro */
+       /* ipad pro */
        
        /* El area de contacto, ya que tiene cajas de texto, labels, se le define un tamaño 
         y que sera apto para cualquiera de las pantallas en que se presente */
@@ -480,6 +519,8 @@ footer .social-links {
         width: 50%;
 
     }
+
+    /* Para definirle el tamaño a las publicaciones */
 
 
     .post ul li {
