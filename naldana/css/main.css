@@ -613,6 +613,8 @@ footer .social-links {
 
     }
 
+    /* Nos muestra la lista de elementos ordenada */
+
     .post ul{
         list-style: none;
         display: flex;
@@ -689,10 +691,13 @@ footer .social-links {
     
     }
 
+    /* Se le define las dimensiones al elemento */
+
     .fa-github, .fa-twitter{
         font-size: calc(1em + 1vh);
     }
 
+    /* Se le define las dimensiones al elemento */
     .social-links{
         margin-bottom: 2em;
     }
